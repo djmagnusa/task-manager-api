@@ -1,12 +1,15 @@
-const express = require('express')
-require('./db/mongoose')
-// const User = require('./models/user')
-// const Task = require('./models/task')
-const userRouter = require('./routers/user')
-const taskRouter = require('./routers/task')
+const app = require('./app')
 
 
-const app = express()
+// const express = require('express')
+// require('./db/mongoose')
+// // const User = require('./models/user')
+// // const Task = require('./models/task')
+// const userRouter = require('./routers/user')
+// const taskRouter = require('./routers/task')
+
+
+// const app = express()
 //const port = process.env.PORT || 3000
 
 const port = process.env.PORT
@@ -58,9 +61,9 @@ const port = process.env.PORT
 //     res.status(503).send('Site is currently down. Check back soon!')
 // })
 
-app.use(express.json()) //will automatically parse incoming json to an object so we can access it in our request handlers
-app.use(userRouter)
-app.use(taskRouter)
+// app.use(express.json()) //will automatically parse incoming json to an object so we can access it in our request handlers
+// app.use(userRouter)
+// app.use(taskRouter)
 
 // const router = new express.Router()
 
